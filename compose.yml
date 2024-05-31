@@ -6,7 +6,8 @@ services:
     expose:
       - 8080
     volumes:
-      - ./app:/var/www/html
+      - ./app:/var/www/html/app
+      - ./index.php:/var/www/html/index.php
     ports:
       - 8080:80
     networks:
